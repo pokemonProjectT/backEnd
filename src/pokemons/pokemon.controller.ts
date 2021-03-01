@@ -25,8 +25,8 @@ export class PokemonController {
   }
   //get all pokemons
     @Get()
-    getPokemon (@Query('page') page:number) {
-       return this.pokemonService.getPokemon(page)
+    getPokemon () {
+       return this.pokemonService.getPokemon()
       }
       //get pokemon by id
       @Get(':id')

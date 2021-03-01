@@ -28,7 +28,7 @@ export class PokemeonService {
         return newpokemon
     }
 
-  async  getPokemon(page:number = 1): Promise<Pokemon[]>{
+  async  getPokemon(): Promise<Pokemon[]>{
         const pokemons = await  this.pokemonModel.find().exec()
         return pokemons
     }
